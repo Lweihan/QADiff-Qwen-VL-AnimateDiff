@@ -1,0 +1,84 @@
+.svg-nav {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    background: cadetblue;
+}
+
+#menu {
+    position: absolute;
+    height: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+    width: 60px;
+    background: gold;
+    z-index: 2;
+}
+
+#menu.expanded {
+    width: 200px;
+}
+
+.hamburger {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    right: 10px;
+    z-index: 4;
+}
+
+.hamburger .line {
+    background: black;
+    border-radius: 3px;
+    width: 100%;
+    height: 4px;
+    z-index: 2;
+}
+
+.hamburger .line:nth-child(2) {
+    margin: 3px 0;
+}
+
+.nav-list {
+    position: absolute;
+    width: 80%;
+    top: 10px;
+}
+
+.nav-list .nav-link {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    padding: 20px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.nav-list .nav-link:hover {
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    margin-left: 1px;
+    color: black;
+}
+
+#blob {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    right: 20px;
+    transform: translateX(100%);
+    height: 100%;
+}
+
+#blob-path {
+    height: 100%;
+    fill: gold;
+}
